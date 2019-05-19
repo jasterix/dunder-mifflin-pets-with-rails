@@ -1,0 +1,11 @@
+<h1><%=  @employee.first_name%>'s Page</h1>
+
+<marquee><h5><%=  @employee.full_name%>🥳 </h5></marquee>
+<h5>Alias: <%= @employee.alias %> </h5>
+<h5>Title: <%= @employee.title %> </h5>
+<h5>Office: <%= @employee.office %> </h5>
+<h5>Dog's Name: <%= @employee.dog.name %> </h5>
+
+<img src=" <%= @employee.img_url %> " alt=" <%= @employee.full_name %> ">
+
+<p> <%= link_to "back to all employees", employees_path %> </p>
